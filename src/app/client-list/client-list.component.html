@@ -1,0 +1,11 @@
+
+<div class="row">
+    <div class="col-xs-10">
+        <app-client-list-edit></app-client-list-edit>
+        <hr>
+        <ul class="list-group">
+            <a  class="list-group-item" 
+            *ngFor="let client of client;let i=index"  style="cursor: pointer;" (click)="onEditItem(i)">Client Name : {{client.name}} | Email:{{client.email}} | Serial_number:{{client.serial_number}} </a>
+        </ul>
+    </div>
+    </div>

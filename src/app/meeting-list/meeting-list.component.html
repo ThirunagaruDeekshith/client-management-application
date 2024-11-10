@@ -1,0 +1,11 @@
+
+<div class="row">
+    <div class="col-xs-10">
+        <app-meeting-list-edit></app-meeting-list-edit>
+        <hr>
+        <ul class="list-group">
+            <a  class="list-group-item" 
+            *ngFor="let meeting of meeting;let i=index"  style="cursor: pointer;" (click)="onEditItem(i)">Meeting Topic : {{meeting.MeetingTopic}} | No.Of People :{{meeting.NumberofPeople}} | StartTime:{{meeting.StartTime}} </a>
+        </ul>
+    </div>
+    </div>
